@@ -108,7 +108,6 @@ document.getElementById("myFoot").style.bottom = "0";
 document.getElementById("myFoot").style.left = "0";
 document.getElementById("myFoot").style.width = "100%";
 
-
 //Style footer text.
 document.getElementById("myFootTxt").style.color = "silver";
 document.getElementById("myFootTxt").style.textAlign = "center";
