@@ -90,7 +90,7 @@ document.getElementById("myList").style.textAlign = "center";
 
 ///Requirement #5: Create a footer.
 //Create a div for the footer.
-let foot = document.createElement("div");
+let foot = document.createElement("footer");
 foot.setAttribute("id", "myFoot");
 document.body.appendChild(foot);
 
