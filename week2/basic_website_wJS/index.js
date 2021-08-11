@@ -2,15 +2,15 @@
 document.body.style.backgroundColor = "black";
 
 ///Requirement #1: Create a navbar.
-//Create div for navbar.
-let navBarDiv = document.createElement("div");
+//Create nav for navbar.
+let navBarDiv = document.createElement("nav");
 navBarDiv.setAttribute("id", "topNav");
 document.body.appendChild(navBarDiv);
 
 //Create anchors for navbar.
 let anchorMy = document.createElement("a");
 let anchorNav = document.createElement("a");
-anchorMy.setAttribute("href", "#My");
+anchorMy.setAttribute("href", "index2.html");
 anchorNav.setAttribute("href", "#Navbar");
 anchorMy.setAttribute("id", "aMy");
 anchorNav.setAttribute("id", "aNav");
