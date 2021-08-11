@@ -10,8 +10,8 @@ document.body.appendChild(navBarDiv);
 //Create anchors for navbar.
 let anchorMy = document.createElement("a");
 let anchorNav = document.createElement("a");
-anchorMy.setAttribute("href", "index2.html");
-anchorNav.setAttribute("href", "#Navbar");
+anchorMy.setAttribute("href", "index.html");
+anchorNav.setAttribute("href", "index2.html");
 anchorMy.setAttribute("id", "aMy");
 anchorNav.setAttribute("id", "aNav");
 anchorMy.textContent = "My";
