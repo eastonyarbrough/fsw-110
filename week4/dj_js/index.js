@@ -46,3 +46,27 @@ function purpleScroll()
 }
 
 window.addEventListener("wheel", purpleScroll);
+
+//Change to the previous colors used by keyboard instead.
+document.addEventListener("keydown", function(event) {
+    if (event.key == 'g')
+    {
+        document.getElementById("mySquare").style.backgroundColor = "green";
+    }
+    else if (event.key == "y")
+    {
+        document.getElementById("mySquare").style.backgroundColor = "yellow";
+    }
+    else if (event.key == "b")
+    {
+        document.getElementById("mySquare").style.backgroundColor = "blue";
+    }
+    else if (event.key == "r")
+    {
+        document.getElementById("mySquare").style.backgroundColor = "red";
+    }
+    else if (event.key == "p")
+    {
+        document.getElementById("mySquare").style.backgroundColor = "purple";
+    }
+});
