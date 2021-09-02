@@ -9,15 +9,36 @@ let burp = form.elements["burpleTurple"];
 let grog = form.elements["grognakSnack"];
 
 hurd.addEventListener("click", function() {
-    hurd.setAttribute("value", "HurdyDurdy9000");
+    if (hurd.value == "")
+    {
+        hurd.setAttribute("value", "HurdyDurdy9000");
+    }
+    else if (hurd.value == "HurdyDurdy9000")
+    {
+        hurd.setAttribute("value", "");
+    }
 });
 
 burp.addEventListener("click", function() {
-    burp.setAttribute("value", "BurpleTurple");
+    if (burp.value == "")
+    {
+        burp.setAttribute("value", "BurpleTurple");
+    }
+    else if (burp.value == "BurpleTurple")
+    {
+        burp.setAttribute("value", "");
+    }
 });
 
 grog.addEventListener("click", function() {
-    grog.setAttribute("value", "GrognakSnack");
+    if (grog.value == "")
+    {
+        grog.setAttribute("value", "GrognakSnack");
+    }
+    else if (grog.value == "GrognakSnack")
+    {
+        grog.setAttribute("value", "");
+    }
 });
 
 form.addEventListener("submit", function() {
