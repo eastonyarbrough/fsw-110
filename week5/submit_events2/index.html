@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Submit Events</title>
+    </head>
+    <body>
+        <h1 style="text-align: center; text-decoration: underline">Please fill out our brief survey!</h1>
+        <form id="myForm">
+            <div style="border: 1px solid black; padding: 25px">
+                <lable for="firstName">First Name:</lable>
+                <input type="text" name="firstName"></input>
+                <lable for="lastName">Last Name:</lable>
+                <input type="text" name="lastName"></input>
+                <lable for="userAge">Age:</lable>
+                <input type="number" name="userAge"></input>
+            </div>
+            <div style="border: 1px solid black; padding: 25px">
+                <lable>Did you enjoy our product?</lable>
+                <lable>Yes:</lable>
+                <input type="radio" name="enjoyProd" value="Yes"></input>
+                <lable>No:</lable>
+                <input type="radio" name="enjoyProd" value="No"></input>
+            </div>
+            <div style="border: 1px solid black; padding: 25px">
+                <lable for="howExp">How was your experience?</lable>
+                <select name="howExp">
+                    <option value="Bad">Bad</option>
+                    <option value="Somewhat Bad">Somewhat Bad</option>
+                    <option value="Undecided">Undecided</option>
+                    <option value="Somewhat Good">Somewhat Good</option>
+                    <option value="Good">Good</option>
+                </select>
+            </div>
+            <div style="border: 1px solid black; padding: 25px">
+                <lable>Which product(s) did you purchase?</lable>
+                <lable for="hurdyDurdy9K">HurdyDurdy-9000</lable>
+                <input type="checkbox" name="hurdyDurdy9K">HurdyDurdy-9000</input>
+                <lable for="burpleTurple">BurpleTurple</lable>
+                <input type="checkbox" name="burpleTurple"></input>
+                <lable for="grognakSnack">GrognakSnack</lable>
+                <input type="checkbox" name="grognakSnack"></input>
+            </div>
+            <div style="width: 50px; margin: 0 auto; padding:20px">
+                <button id="myButton">Submit</button>
+            </div>
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
