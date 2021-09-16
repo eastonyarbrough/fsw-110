@@ -1,0 +1,78 @@
+body {
+    background: url("images/bkgImg.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 200px 1fr;
+}
+
+#headFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#headFlex>h1 {
+    font-size: 40px;
+    font-family: 'Shadows Into Light', cursive;
+    text-decoration: underline;
+}
+
+#formDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#listFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+#myToDo>li>h2 {
+    font-size: 30px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#myToDo>li>p {
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#inputGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 30px);
+}
+
+.formLbl {
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#btnFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
