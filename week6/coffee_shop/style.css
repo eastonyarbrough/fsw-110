@@ -1,0 +1,234 @@
+html {
+    background: url("images/bkgImg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 105px 1fr 180px;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: slategray;
+    border-radius: 10px;
+}
+
+nav>a {
+    float: left;
+    padding: 0 10px;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Allison';
+}
+
+nav>a:hover {
+    transform: translateY(-3px);
+    transition: 0.5s ease-out;
+    text-decoration: underline;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header>div {
+    width: 80vw;
+    background-color: slategray;
+    border-radius: 50%;
+}
+
+header>div>h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Allison';
+}
+
+form {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+}
+
+.itemGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 80px 70px 30px;
+    margin: 30px;
+    border: 10px groove slategray;
+    background-color: slategray;
+}
+
+.itemGrid>img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 20px;
+    width: 30vh;
+    margin: 0 auto;
+}
+
+.itemTxt {
+    text-align: center;
+    font-family: 'Allison';
+    font-size: 30px;
+}
+
+.flexInput {
+    display: flex;
+    justify-content: center;
+}
+
+#totalContainer {
+    display: flex;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+#totalPlatform {
+    width: 180px;
+    height: 50px;
+    border: 10px groove slategray;
+    background-color: slategray;
+    text-align: center;
+}
+
+.platAsset {
+    display: inline-block;
+    font-family: 'Allison';
+    font-size: 25px;
+    margin: 10px auto ;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: slategray;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.ftrContent {
+    padding: 0 10px;
+    font-family: 'Allison';
+    font-size: 28px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+    #gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 35px 105px 1fr 80px;
+    }
+    
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: slategray;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 980px) {
+    /* Noted Full-Screen Size Changes */
+    header>div {
+        width: 30vw;
+    }
+    
+    /* Main Grid Section Media Screen */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 60px;
+    }
+
+    #espresso {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #latte {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #cappuccino {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #macchiato {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    #totalContainer {
+        display: flex;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    /* Item Grid Sections Media Screen */
+    .itemGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 70px 20px;
+        margin: 5%;
+    }
+
+    .itemGrid>img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        padding: 20px 0;
+    }
+}
